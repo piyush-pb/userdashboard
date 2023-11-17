@@ -1,0 +1,62 @@
+{
+  "name": "dashboard",
+  "version": "0.1.6",
+  "main": "index.js",
+  "author": "abhilashjn",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhilashJN/dashboard.git"
+  },
+  "description": "Dashboard for monitoring Bull userss, built using Express and React. Can be mounted as middleware in an existing express app.",
+  "bugs": {
+    "url": "https://github.com/AbhilashJN/dashboard/issues"
+  },
+  "keywords": [
+    "bull",
+    "dashboard",
+    "users",
+    "monitor",
+    "monitoring",
+    "Monitor users",
+    "redis"
+  ],
+  "homepage": ".",
+  "dependencies": {
+    "bull": "^3.13.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev:fe": "DASHBOARD=dev react-scripts start",
+    "dev:server": "node server/devServer.js",
+    "prepublishOnly": "npm run build"
+  },
+  "proxy": "http://localhost:9000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
