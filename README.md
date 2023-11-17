@@ -1,7 +1,11 @@
 # userdashboard
 A assignment for juno finanace 
-a dashboard for monitoring users behavior and risk indicator on basis for that
+a dashboard for monitoring users behavior and risk indicator on basis of that
+
+
 Created using React framework with next js parts
+
+
 HTML, CSS, JS
 
 # Getting Started with Create React App
